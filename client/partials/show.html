@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- CLIENT-> PARTIALS -> SHOW.HTML -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <style>
+      table {
+          font-family: Dosis, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+      }
+      form {
+        font-family: Dosis, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+
+      }
+      h3{
+        font-family: Dosis, sans-serif;
+      }
+      td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+      }
+      tr:nth-child(even) {
+          background-color: #dddddd;
+      }
+
+  button {
+  background: #a6c9e0;
+  background-image: -webkit-linear-gradient(top, #a6c9e0, #2980b9);
+  background-image: -moz-linear-gradient(top, #a6c9e0, #2980b9);
+  background-image: -ms-linear-gradient(top, #a6c9e0, #2980b9);
+  background-image: -o-linear-gradient(top, #a6c9e0, #2980b9);
+  background-image: linear-gradient(to bottom, #a6c9e0, #2980b9);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Dosis';
+  color: #ffffff;
+  font-size: 10px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+  </style>
+  </head>
+  <body>
+  <div class="table">
+    <table>
+      <tr>
+        <th>Survey Questions</th>
+        <th>Name </th>
+        <th>Date of Question</th>
+      </tr>
+      <tbody>
+        <tr>
+          <td>{{question.question}}</td>
+          <td>{{question.uname}} </td>
+          <td>{{question.questdate}}</td>
+        </tr>
+      </tbody>
+    </table>
+<h3>What are your thoughts</h3><br>
+<form ng-submit="makepoll()">
+  Question: {{question.question}} <br>
+  Opinion 1: <input type="text" ng-model="newpoll.option1"><br>
+  Opinion 2: <input type="text" ng-model="newpoll.option2"><br>
+
+  Opinion 3: <input type="text" ng-model="newpoll.option3"><br>
+  Opinion 4: <input type="text" ng-model="newpoll.option4"><br>
+  <button ng-click ="Your Thoughts">Submit Your Thoughts</button>
+</form>
+
+<div ng-if="errors">
+<p ng-repeat="message in messages">{{message}}</p>
+</div>
+</div>
+  
+<a href="#/"><button>Back</button></a>
+</body>
+</html>

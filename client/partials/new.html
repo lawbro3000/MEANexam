@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- CLIENT-> PARTIALS -> NEW.HTML -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <style>
+      form {
+          font-family: Dosis, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+      }
+      td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+      }
+      tr:nth-child(even) {
+          background-color: #dddddd;
+      }
+
+  button {
+  background: #a6c9e0;
+  background-image: -webkit-linear-gradient(top, #a6c9e0, #2980b9);
+  background-image: -moz-linear-gradient(top, #a6c9e0, #2980b9);
+  background-image: -ms-linear-gradient(top, #a6c9e0, #2980b9);
+  background-image: -o-linear-gradient(top, #a6c9e0, #2980b9);
+  background-image: linear-gradient(to bottom, #a6c9e0, #2980b9);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 5px;
+  font-family: 'Dosis';
+  color: #ffffff;
+  font-size: 10px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+  </style>
+  </head>
+  <body>
+  <a href="#/"><button>HOME</button></a>
+      <form ng-submit = 'create()'>
+      <p>POST Your Question here : <input type='textarea' ng-model = 'question.question'></p> 
+      <p>Your Name:  <input type='text' ng-model = 'question.uname'></p> 
+      <p>Question Date:  <input type='date' ng-model = 'question.questDate'></p>
+      <p><button type="submit">add a Question</button></p>
+      </form>
+    </div>
+  </body>
+</html>
+

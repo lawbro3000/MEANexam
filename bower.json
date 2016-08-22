@@ -1,0 +1,21 @@
+{
+  "name": "MEANexam",
+  "homepage": "https://github.com/lawbro3000/angularPractice",
+  "authors": [
+    "lawbro3000 <myemail@me.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}

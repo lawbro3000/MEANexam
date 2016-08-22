@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Here you Edit your Questions </title>
+     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <style>
+      form{
+          font-family: Dosis, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+      }
+      td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+      }
+      tr:nth-child(even) {
+          background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>  
+      <body>
+  <a href="#/"><button>HOME</button></a>
+      <form ng-submit = 'edit()'>
+      <p>Your Question: <input type='text' ng-model = 'question.question'></p> 
+      <p>Your name:  <input type='text' ng-model = 'question.uname'></p> 
+      <p>QuestionDate:  <input type='date' ng-model = 'question.questdate'></p>
+      <p><button type="submit">Update Friend</button></p>
+      </form>
+    </div>
+  </body>
+    </div>
+     <a href="#/"><button>Back</button></a>
+  </body>
+</html>
